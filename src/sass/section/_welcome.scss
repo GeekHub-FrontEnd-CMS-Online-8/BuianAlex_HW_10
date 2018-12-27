@@ -1,0 +1,113 @@
+.welcome{
+  margin-top: -64px;///
+  position: relative;
+  &__main-nav{
+    a:hover{
+      background-color: rgba(255,255,255,0.3);
+    }
+    a.active{
+      background-color: #74c7d5;
+    }
+  }
+  &-slider{
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+  &-text{
+    display: flex;
+    justify-content: center;
+    @extend %absolute-center-center;
+    width: 324px;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 2px;
+    padding: 1.5rem 0;
+  }
+  .slide{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .slide:nth-child(1){
+    background-image: 
+      url('./../img/welcome-bg.png');
+  }
+  .slide:nth-child(2){
+    background-image: 
+      url('./../img/Life-Changing-Books-That-Shape-Your-Thinking-Tomas-Laurinavicius-Life-Designed.jpg');
+  }
+  .slide:nth-child(3){
+    background-image: 
+      url('./../img/Ciw.jpeg');
+  }
+  .text-first{
+    text-align: right;
+    color: #74c7d5;
+    font-size: 1.5rem;
+    font-weight: 300;
+      }
+  .text-second{
+    text-align: left;
+    color: #74c7d5;
+    font-family: "Lato";
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+}
+@media (min-width: 576px) {
+  .welcome{
+    .welcome-text{
+    width: 464px;
+  }
+    .text-first{
+      font-size: 2rem;
+      line-height: 40px;
+    }
+    .text-second{
+    font-size: 4.5rem;
+   line-height: 80px;  
+    }
+  }
+ }
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .welcome{
+    .welcome-text{
+    width: 622px;
+  }
+    .text-first{
+      font-size: 3rem;
+      line-height: 40px;
+    }
+    .text-second{
+    font-size: 6rem;
+   line-height: 80px;  
+    }
+  }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .welcome{
+    .welcome-text{
+      width: 840px;
+      padding: 2rem 1rem;
+      overflow: hidden;
+    }
+    .text-first{
+      font-size: 4rem;
+      line-height: 55px;
+    }
+    .text-second{
+    font-size: 8.5rem;
+      line-height: 104px;  
+    }
+  }
+ }
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+
+}

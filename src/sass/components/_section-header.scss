@@ -1,0 +1,37 @@
+.section-header{
+  text-align: center;
+  h2{
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-family: 'Lato-Light';
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 4rem;
+    margin-bottom: 1.5rem;
+  }
+  .text-big{
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .text-small{
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    overflow: hidden;
+  }
+
+  strong{
+      color: #ec9da2;
+  }
+}
+@media (min-width: 576px) { 
+  .section-header{
+   h2{
+     font-size: 3.75rem;
+   }
+  }
+}
